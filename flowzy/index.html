@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flowzy · Kazeji</title>
+<meta name="description" content="Flowzy · ordena el flujo, encuentra la calma. Quinientos niveles, sin prisa y sin perder.">
+<style>
+:root{--tinta:#1E1B3A;--grafito:#5A5580;--humo:#615C88;--nube:#F3F0FF;--crema:#FFF8F0;
+ --turquesa:#17C3B2;--coral:#FF6B6B;--sol:#FFD166}
+@media (prefers-color-scheme:dark){
+  :root{--tinta:#F3F0FF;--grafito:#BDB6DE;--humo:#9A93BF;--nube:#2A2550;--crema:#141230}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--crema);color:var(--tinta);
+ font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.envoltorio{max-width:680px;margin:0 auto;padding:48px 22px 80px}
+.volver{font-size:14px;color:var(--humo);text-decoration:none}
+.volver:hover{color:var(--turquesa)}
+h1{font-size:46px;margin:26px 0 6px;line-height:1.1;letter-spacing:-.02em}
+.lema{color:var(--grafito);font-size:19px;margin:0 0 34px}
+.piezas{display:flex;gap:12px;margin-bottom:38px}
+.pieza{width:42px;height:42px}
+.circulo{background:var(--turquesa);border-radius:50%}
+.cuadrado{background:var(--coral);border-radius:10px}
+.triangulo{width:0;height:0;border-left:21px solid transparent;border-right:21px solid transparent;
+ border-bottom:38px solid var(--sol)}
+h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--humo);
+ margin:38px 0 14px;font-weight:700}
+p{margin:0 0 14px}
+.caja{background:var(--nube);border-radius:16px;padding:20px 22px;margin:0 0 12px}
+.caja strong{display:block;margin-bottom:4px}
+.caja span{color:var(--grafito);font-size:15px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--nube);
+ color:var(--humo);font-size:14px}
+a{color:var(--turquesa)}
+</style>
+</head>
+<body>
+<div class="envoltorio">
+
+  <a class="volver" href="https://kazeji.com">← Kazeji</a>
+
+  <h1>Flowzy</h1>
+  <p class="lema">Ordena el flujo, encuentra la calma.</p>
+
+  <div class="piezas">
+    <div class="pieza circulo"></div>
+    <div class="pieza cuadrado"></div>
+    <div class="triangulo"></div>
+  </div>
+
+  <p>
+    Arrastra la ficha de arriba a una columna. Tres iguales juntas y la columna se vacía.
+    Esa es toda la regla. A partir de ahí, quinientos niveles repartidos en cinco retos,
+    de Calma a Extremo, para jugar a tu ritmo.
+  </p>
+
+  <h2>Cómo está hecho</h2>
+
+  <div class="caja">
+    <strong>Aquí no se pierde</strong>
+    <span>Si un nivel se atasca, puedes aflojarlo, pedir una pista o saltarlo. Nunca te echa de la partida.</span>
+  </div>
+  <div class="caja">
+    <strong>Sin prisa, y sin reloj si no lo quieres</strong>
+    <span>El reloj se elige aparte del reto. Puedes jugar los quinientos niveles sin ninguna cuenta atrás.</span>
+  </div>
+  <div class="caja">
+    <strong>Cada diez niveles te invita a parar</strong>
+    <span>No para que dejes de jugar, sino porque todo queda guardado y volver mañana no cuesta nada.</span>
+  </div>
+  <div class="caja">
+    <strong>Siete idiomas</strong>
+    <span>Español, inglés, alemán, francés, italiano, portugués y polaco.</span>
+  </div>
+
+  <h2>Privacidad</h2>
+  <p>
+    Flowzy no recoge, guarda ni envía ningún dato personal. No hay cuenta, ni registro, ni
+    publicidad, ni analítica. Tu progreso se queda en tu dispositivo y se borra al desinstalar.
+    Puedes leer la <a href="privacidad.html">política de privacidad completa</a>.
+  </p>
+
+  <footer>
+    Flowzy es un juego de Kazeji · <a href="mailto:contacto@kazeji.com">contacto@kazeji.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
