@@ -7,16 +7,16 @@
 <meta name="description" content="Flowzy · ordena el flujo, encuentra la calma. Quinientos niveles, sin prisa y sin perder.">
 <style>
 :root{--tinta:#1E1B3A;--grafito:#5A5580;--humo:#615C88;--nube:#F3F0FF;--crema:#FFF8F0;
- --turquesa:#17C3B2;--coral:#FF6B6B;--sol:#FFD166}
+ --turquesa:#17C3B2;--turquesa-texto:#0E7B70;--coral:#FF6B6B;--sol:#FFD166}
 @media (prefers-color-scheme:dark){
-  :root{--tinta:#F3F0FF;--grafito:#BDB6DE;--humo:#9A93BF;--nube:#2A2550;--crema:#141230}
+  :root{--tinta:#F3F0FF;--grafito:#BDB6DE;--humo:#9A93BF;--nube:#2A2550;--crema:#141230;--turquesa-texto:#17C3B2}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--crema);color:var(--tinta);
  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .envoltorio{max-width:680px;margin:0 auto;padding:48px 22px 80px}
 .volver{font-size:14px;color:var(--humo);text-decoration:none}
-.volver:hover{color:var(--turquesa)}
+.volver:hover{color:var(--turquesa-texto)}
 h1{font-size:46px;margin:26px 0 6px;line-height:1.1;letter-spacing:-.02em}
 .lema{color:var(--grafito);font-size:19px;margin:0 0 34px}
 .piezas{display:flex;gap:12px;margin-bottom:38px}
@@ -33,7 +33,7 @@ p{margin:0 0 14px}
 .caja span{color:var(--grafito);font-size:15px}
 footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--nube);
  color:var(--humo);font-size:14px}
-a{color:var(--turquesa)}
+a{color:var(--turquesa-texto)}
 </style>
 </head>
 <body>

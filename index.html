@@ -6,15 +6,15 @@
 <title>Kazeji</title>
 <meta name="description" content="Kazeji · juegos para móvil hechos con calma.">
 <style>
-:root{--tinta:#1E1B3A;--grafito:#5A5580;--humo:#615C88;--nube:#F3F0FF;--crema:#FFF8F0;--turquesa:#17C3B2}
+:root{--tinta:#1E1B3A;--grafito:#5A5580;--humo:#615C88;--nube:#F3F0FF;--crema:#FFF8F0;--turquesa:#17C3B2;--turquesa-texto:#0E7B70}
 @media (prefers-color-scheme:dark){
-  :root{--tinta:#F3F0FF;--grafito:#BDB6DE;--humo:#9A93BF;--nube:#2A2550;--crema:#141230}
+  :root{--tinta:#F3F0FF;--grafito:#BDB6DE;--humo:#9A93BF;--nube:#2A2550;--crema:#141230;--turquesa-texto:#17C3B2}
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--crema);color:var(--tinta);
  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .envoltorio{max-width:680px;margin:0 auto;padding:64px 22px 80px}
-.marca{font-size:13px;letter-spacing:.24em;color:var(--turquesa);font-weight:700}
+.marca{font-size:13px;letter-spacing:.24em;color:var(--turquesa-texto);font-weight:700}
 h1{font-size:44px;margin:14px 0 4px;line-height:1.1;letter-spacing:-.02em}
 .lema{color:var(--grafito);font-size:19px;margin:0 0 8px}
 .kanji{color:var(--humo);font-size:15px;margin:0 0 54px}
@@ -22,13 +22,13 @@ h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--humo
  margin:0 0 18px;font-weight:700}
 .juego{display:block;text-decoration:none;color:inherit;background:var(--nube);
  border-radius:16px;padding:20px 22px;margin-bottom:12px;border:1px solid transparent}
-.juego:hover{border-color:var(--turquesa)}
+.juego:hover{border-color:var(--turquesa-texto)}
 .juego .nombre{font-size:20px;font-weight:700;margin-bottom:3px}
 .juego .que{color:var(--grafito);font-size:15px}
 .juego .estado{color:var(--humo);font-size:13px;margin-top:6px}
 footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--nube);
  color:var(--humo);font-size:14px}
-a{color:var(--turquesa)}
+a{color:var(--turquesa-texto)}
 </style>
 </head>
 <body>
