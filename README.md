@@ -22,23 +22,29 @@ lo que ya está.
 ## Publicar
 
 Las dos tiendas exigen una **URL pública** de política de privacidad, y la
-comprueban sin sesión iniciada. Con GitHub Pages:
+comprueban sin sesión iniciada. El sitio lo sirve **Cloudflare Pages** desde este
+repositorio: cada empujón a `main` despliega. La configuración es la de un sitio
+estático sin construir —sin comando de compilación y con la raíz del repositorio
+como carpeta de salida—, porque aquí solo hay HTML.
 
-1. **Settings → Pages**, origen `Deploy from a branch`, rama `main`, carpeta `/`.
-2. El repositorio tiene que ser **público**, o hacer falta un plan de pago: Pages
-   sobre un repositorio privado no sirve en el plan gratuito.
-3. Con dominio propio, el fichero `CNAME` va en la raíz y el dominio se apunta en
-   la misma pantalla de Pages.
+El dominio `kazeji.com` está apuntado en **Workers & Pages → el proyecto → Custom
+domains**, con el apex y `www` resolviendo los dos. GitHub Pages quedó apagado
+(`Settings → Pages → Source → None`) para que el sitio no viva en dos sitios a la
+vez y los buscadores no tengan que elegir.
 
 Las direcciones quedan así:
 
-| Página | Sin dominio propio | Con dominio propio |
-|---|---|---|
-| Estudio | `kazeji.github.io/` | `kazeji.com` |
-| Flowzy | `kazeji.github.io/flowzy/` | `kazeji.com/flowzy/` |
-| Privacidad | `kazeji.github.io/flowzy/privacidad.html` | `kazeji.com/flowzy/privacidad.html` |
+| Página | Dirección |
+|---|---|
+| Estudio | `kazeji.com` |
+| Flowzy | `kazeji.com/flowzy/` |
+| Privacidad | `kazeji.com/flowzy/privacidad.html` |
 
 La tercera es la que se pega en la ficha de Google Play y de App Store.
+
+Los enlaces internos son relativos —`flowzy/`, `../`—, así que las mismas páginas
+funcionan con el dominio, en la vista previa de despliegue de Cloudflare y
+abiertas desde un servidor local, sin tocar nada.
 
 ## Estado
 
@@ -46,9 +52,8 @@ La tercera es la que se pega en la ficha de Google Play y de App Store.
 - [x] Servido por Cloudflare Pages en `kazeji.com`.
 - [x] Enlaces internos relativos: funcionan con dominio, en vista previa y en local.
 - [x] Política de privacidad con responsable y fecha. Publicable.
+- [x] GitHub Pages desactivado: el sitio ya no se duplica en `igisgoce.github.io/Kazeji/`.
 - [ ] Domicilio del responsable, pendiente de resolver dónde se fija.
-- [ ] Desactivar GitHub Pages, que quedó activo y duplica el sitio en
-      `igisgoce.github.io/Kazeji/` (Settings → Pages → Source → None).
 - [ ] Abrir las tres páginas en un móvil de verdad, no solo en el escritorio.
 
 ### Sobre el domicilio
