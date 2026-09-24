@@ -40,14 +40,31 @@ Las direcciones quedan así:
 
 La tercera es la que se pega en la ficha de Google Play y de App Store.
 
-## Antes de publicar
+## Estado
 
-- [ ] Rellenar los marcadores de `flowzy/privacidad.html`: fecha de publicación,
-      nombre y apellidos del responsable, y dirección postal.
-- [ ] Decidir si el repositorio pasa a público o se contrata Pages de pago.
-- [ ] Comprobar que los enlaces entre páginas funcionan con el dominio elegido.
-- [ ] Abrir las tres páginas en un móvil de verdad, no solo en el navegador de
-      escritorio.
+- [x] Repositorio público.
+- [x] Servido por Cloudflare Pages en `kazeji.com`.
+- [x] Enlaces internos relativos: funcionan con dominio, en vista previa y en local.
+- [x] Política de privacidad con responsable y fecha. Publicable.
+- [ ] Domicilio del responsable, pendiente de resolver dónde se fija.
+- [ ] Desactivar GitHub Pages, que quedó activo y duplica el sitio en
+      `igisgoce.github.io/Kazeji/` (Settings → Pages → Source → None).
+- [ ] Abrir las tres páginas en un móvil de verdad, no solo en el escritorio.
+
+### Sobre el domicilio
+
+El RGPD pide identidad y datos de contacto del responsable, y un correo que se
+atiende cumple esa parte: por eso la política ya es publicable sin dirección
+postal. Dos cosas que conviene resolver antes del lanzamiento, y que van por
+caminos distintos:
+
+- **Google Play** no acepta apartados de correos ni oficinas virtuales en la
+  verificación de una cuenta personal, y **publica la dirección completa** en la
+  ficha si la aplicación monetiza. Separar el domicilio particular de la ficha
+  pasa por registrar una cuenta de organización, no por un apartado.
+- **La LSSI** (Ley 34/2002, art. 10) exige a los prestadores de servicios
+  publicar su domicilio. Si aplica a este caso, la dirección tendrá que estar en
+  la política de todas formas. Merece una consulta antes de publicar.
 
 ## Mantener
 
